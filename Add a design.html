@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+		<link rel="stylesheet" type="text/css" href="style/myStyle.css">
+		<script src="js/javas.js"> </script>
+		
+		<title> Add Design </title>
+		
+		<center>
+		
+		
+		</center>
+		
+		
+</head>
+
+<div style="width: 25cm; height: 6cm; border: 2px;">
+	<div style="margin-left: 30.5cm;">
+		<img src="login.jpg" width="75" height="75" alt="userlogo"></center><center><h4><a href="">Login/Register</h4><br>
+		<img src="searchbar.png" width="15" height="12"><input type="text" placeholder="search.." name="search"><button type="submit"></center>
+	</div>
+	</div>
+	<div>
+		
+	</div>
+	<center>
+		<h3 style="margin-top: -3cm;">PRIZMA</h3>
+		
+		</center></div>
+
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#contact">Contact Us</a>
+  <a href="#about">About Us</a>
+  <a href="#logout">Logout</a>
+  
+</div>
+
+
+<div id="page">
+		<div id="side">
+		<center>
+		<ul class="list">
+			<li><img class="logo" src="images-cons/logo.jpg" alt="logo"></li>
+			<li><button id="bt1" class="bt" type="button" href="">Home</button></li>
+			<li><button id="bt1" class="bt" type="button" href="">Sites</button></li>
+			<li><button id="bt1" class="bt" type="button" href="">Design</button></li>
+			<li><button id="bt1" class="bt" type="button" href="">Suppliers</button></li>
+			<li><button id="bt1" class="bt" type="button" href="">Projects</button></li>
+			<li><button id="bt1" class="bt" type="button" href="">Workers</button></li>
+			<li><button id="bt1" class="bt" type="button" href="">Contact us</button></li>
+		</ul>
+		<img class="fg" src="" href="">
+		<img class="fg" src="" href="">
+		<img class="fg" src="" href="">
+		<img class="fg" src="" href="">
+		</center>
+		
+		</div>
+		
+		</div>
+		</div>
+		<br><br><br><br>
+	<div>
+
+		
+		<form name="Add" method="post" action="process.php" enctype="multipart/form-data" class="tasks" onsubmit="return validateForm()" onsubmit="return validateEmail()">
+		
+		
+		<center><h2> Add New Design </h2>
+		<p></p>
+		<p></p>
+		<fieldset>
+		<legend><h3> Designer Details</h3> </legend>
+		<table>
+		<tr>
+			<td>
+				<label for="name" >Designer Name:</label>
+			</td>
+			<td>
+				<select placeholder="select"> 
+				<option value="Mr" placeholder="Select"> Mr. </option>
+				<option value="Mrs"> Mrs. </option>
+				<option value="Ms"> Ms. </option>
+			<select>
+			<input type="text" placeholder="Enter name" id="name" name="dname" maxlength="90" size="90">
+			</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<label for="contact"> Contact Number: </label>
+			</td>
+			<td>
+				<input type="text" name="contact" placeholder="Enter Contact Number" maxlength="100" size="100">
+			</td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>
+				<label for="email"> E-mail: </label>
+			</td>
+			<td>
+				 <input type="email" placeholder="Enter E-mail" name="email" maxlength="50" size="100">
+			</td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>	
+				<label for="idN"> Employee ID: </label>
+			</td>
+			<td>
+				<input type="text" placeholder="Enter Emp ID" id="idN" name="idN" maxlength="50" size="100">
+			</td>
+		</tr>
+		<tr></tr>
+		
+		<tr>
+				<td>
+					<label for="addr">  Address: </label> 
+				</td>
+				<td>
+				<input type="text" placeholder="Enter Address" id="addr" name="addr" maxlength="100" size="100">
+			</td>
+			</tr>
+			<tr></tr>
+		</table>
+		</fieldset>
+		<br> <br>
+		<fieldset>
+		<legend><h3> Design Details </h3> </legend>
+		<br> 
+		<table>
+			<tr>
+				<td>
+					<label for="type"> Design Type: </label> 
+				</td>
+				<td>
+					<select name="Dtype" width="100px">
+					<option value="Building Design"> Building </option>
+					<option value="Home Design"> Home </option>
+					<option value="Graden Design"> Garden </option>
+					<option value="Bridge Design"> Bridge </option>
+					</select>
+				</td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td>
+					<label for="level"> Priority Level: </label> 
+				</td>
+				<td>
+				<input type="radio" id="1" name="1" value="1"maxlength="100" size="100"  >
+				<label for="1">Level 1</label>
+				<input type="radio" id="2" name="1" value="2">
+				<label for="2">Level 2</label>
+				<input type="radio" id="3" name="1" value="3">
+				<label for="3">Level 3</label> 
+				</td>
+			</tr>
+			<tr></tr>
+			<tr>
+			<td> 
+				<label for="sketch"> Add Sketch: </label>
+			</td>
+			<td>
+				<input type="file" name="file" placeholder="Upload design here" id="file">
+			</td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td>
+					<label for="dId"> Design ID: </label>
+				</td>
+				<td>
+				<input type="text" placeholder="Enter Design ID" id="dId" name="dId" maxlength="100" size="100" required>
+				</td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td>
+					<label for="area"> Area: </label>
+				</td>
+				<td>
+				<input value="" placeholder="Enter Area" id="area" name="area" maxlength="100" size="100">
+				</td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td>
+					<label for="time"> Time Period: </label>
+				</td>
+				<td>
+					<input type="text" placeholder="Enter Time Period" id="time" name="time" maxlength="100" size="100">
+				</td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td>
+					<label for="description"> Description: </label>
+				</td>
+				<td>
+					<input type="text" placeholder="Enter a description" id="time" name="des" maxlength="500" size="100">
+				</td>
+			</tr>
+			
+		</table>	 
+		</fieldset>
+		<br> 
+		</div>
+		
+		<!--/div-->
+		<center><input type="submit" name="btnS" value="Submit" id="submit" class="button"></center>
+		</form>
+		</div>
+		
+		</div>
+</body> 
+<footer class="footer">
+<hr>
+<p> @copyrights reserved from 2018 policy manager</p>
+<div class="logos">
+<a href="https://gsuite.google.com/ "><img src="images-cons/email2.png" width="100px" height="75px"></a>
+
+<a href="https://www.facebook.com/"><img src="images-cons/fb2.png" width="150px" height="75px"></a>
+
+<a href="https://twitter.com/login"><img src="images-cons/twitter2.png" width="150px" height="75px"></a>
+</div>
+
+</footer>
+
+
+
+</html>
+		
